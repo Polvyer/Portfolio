@@ -1,14 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const Container = styled.span`
-  color: #CCC;
-`;
-
-const Link = styled.a`
-  color: #3A92C8;
-  text-decoration: none;
-`;
+import { Container, Link } from './Styles';
 
 const Answer = ({ answer }) => {
 

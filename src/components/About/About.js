@@ -1,33 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
 import Code from '../Code/Code';
+import { Container, Inner, Description } from './Styles';
 
-const Container = styled.div`
-  background-color: #C26868;
-  height: 1020px;
-  margin-top: -22px;
-`;
-
-const Inner = styled.div`
-  max-width: 1024px;
-  margin: 0 auto;
-`;
-
-const Description = styled.p`
-  text-align: center;
-  padding-top: 60px;
-  letter-spacing: 0.3em;
-  color: #FAFAFA;
-  font-family: 'Open Sans', 'sans-serif';
-  font-weight: 700;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-`;
-
-const About = () => {
+const About = ({ tocRef }) => {
 
   return (
-    <Container id="about">
+    <Container ref={el => tocRef.current[0] = el} id="about">
       <Inner className="inner">
         <Description>Hello, world! I'm a Software Engineer.</Description>
         <br />
