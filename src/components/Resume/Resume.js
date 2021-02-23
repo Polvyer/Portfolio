@@ -29,9 +29,17 @@ const Tagline = styled.p`
   text-transform: uppercase;
 `;
 
+const Anchor = styled.a`
+  display: block;
+  position: relative;
+  top: -150px;
+  visibility: hidden;
+`;
+
 const Resume = ({ tocRef }) => {
   return (
-    <Container ref={el => tocRef.current[1] = el} id="resume">
+    <Container id="resume">
+      <Anchor className="anchor" ref={el => tocRef.current[1] = el}></Anchor>
       <Inner className="inner">
         <Tagline className="tagline">Résumé</Tagline>
         <Education />

@@ -23,8 +23,16 @@ const Description = styled.p`
   text-transform: uppercase;
 `;
 
+const Anchor = styled.a`
+  display: block;
+  position: relative;
+  top: -90px;
+  visibility: hidden;
+`;
+
 export {
   Container,
   Inner,
   Description,
+  Anchor,
 };

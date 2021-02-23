@@ -1,11 +1,12 @@
 import React from 'react';
 import Code from '../Code/Code';
-import { Container, Inner, Description } from './Styles';
+import { Container, Inner, Description, Anchor } from './Styles';
 
 const About = ({ tocRef }) => {
 
   return (
-    <Container ref={el => tocRef.current[0] = el} id="about">
+    <Container id="about">
+      <Anchor className="anchor" ref={el => tocRef.current[0] = el}></Anchor>
       <Inner className="inner">
         <Description>Hello, world! I'm a Software Engineer.</Description>
         <br />
