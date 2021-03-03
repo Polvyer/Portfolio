@@ -24,7 +24,7 @@ const Code = () => {
     },
     {
       input: 'William.interests',
-      output: '["Code", "Photography", "hiking", "gaming", "music"]',
+      output: '["Code", "Photography", "volunteering", "hiking", "gaming", "music"]',
     },
     {
       input: 'William.workExperience.latest',

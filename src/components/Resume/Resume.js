@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Education from '../Education/Education';
+import Experience from '../Experience/Experience';
 
 const Container = styled.div`
   background-color: #DDD;
@@ -43,6 +44,8 @@ const Resume = ({ tocRef }) => {
       <Inner className="inner">
         <Tagline className="tagline">Résumé</Tagline>
         <Education />
+        <Experience />
+        <br />
       </Inner>
     </Container>
   );

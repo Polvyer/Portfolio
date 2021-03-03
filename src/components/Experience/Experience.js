@@ -1,32 +1,30 @@
 import React from 'react';
 import UIC from '../../images/uic.png';
-import Coursework from '../Coursework/Coursework';
 import Skills from '../Skills/Skills';
 import ResumeHeader from '../ResumeHeader/ResumeHeader';
 import { SectionTagline, Relevant } from './Styles';
 
-const Education = () => {
+const Experience = () => {
 
   const skills = [
-    'C', 'C++', 'Java', 'Python', 'SQL', 'Git', 'JavaFX',
-    'JavaScript', 'F#', 'Android Studio', 'Unity', 'C#'
+    'C++', 'Python', 'SQL', 'F#', 'C#', 'ASP.NET'
   ];
 
   return (
     <>
-      <SectionTagline className="section-tagline">Education</SectionTagline>
+      <SectionTagline className="section-tagline">Experience</SectionTagline>
       <p>
         <ResumeHeader 
-          title="Computer Science, B.S." 
+          title="Teaching Assistant" 
           place="Chicago, IL" 
-          timeframe="2018 - 2020" 
+          timeframe="Fall 2020" 
           location="University of Illinois At Chicago" 
           img={UIC} />
         <br />
         <br />
-        <Relevant>Relevant Coursework:</Relevant>
+        <Relevant>Joined a team of product and software engineers within IDEO to design, prototype, build and ship digital products. Worked as both a designer and developer on a variety of internal and client projects.</Relevant>
       </p>
-      <Coursework />
+      <br />
       <Skills skills={skills} />
       <br />
       <br />
@@ -34,4 +32,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default Experience;

@@ -3,6 +3,7 @@ import Header from './Header/Header';
 import Illustration from './Illustration/Illustration';
 import About from './About/About';
 import Resume from './Resume/Resume';
+import Projects from './Projects/Projects';
 
 const PageWrapper = ({ tocRef }) => {
   
@@ -12,6 +13,7 @@ const PageWrapper = ({ tocRef }) => {
       <Illustration />
       <About tocRef={tocRef} />
       <Resume tocRef={tocRef} />
+      <Projects />
     </div>
   );
 };
