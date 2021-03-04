@@ -1,6 +1,5 @@
 import React from 'react';
 import Answer from '../Answer/Answer';
-import Resume from '../../documents/williamocampo.pdf';
 import { Container, Console } from './Styles';
 
 const Code = () => {
@@ -34,7 +33,7 @@ const Code = () => {
     {
       input: 'William.resume',
       output: ['williamocampo.pdf'],
-      link: [Resume],
+      link: ["https://www.dropbox.com/s/gu6g24g8phvqgk9/William_Ocampo_Resume.pdf?dl=0"],
     },
     {
       input: 'William.profiles',
