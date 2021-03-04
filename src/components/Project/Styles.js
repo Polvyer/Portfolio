@@ -9,6 +9,7 @@ const Container = styled.div`
 
 const Popup = styled.a`
   text-decoration: none;
+  cursor: pointer;
 
   img {
     width: 100%;

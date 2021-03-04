@@ -54,7 +54,7 @@ const Projects = ({ tocRef }) => {
       <Inner className="inner">
         <Tagline id="projects">Projects</Tagline>
         <Section>
-          {listOfProjects.map(project => <Project project={project} />)}
+          {listOfProjects.map((project, index) => <Project key={index} project={project} />)}
         </Section>
       </Inner>
     </Container>
