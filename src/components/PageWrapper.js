@@ -13,7 +13,7 @@ const PageWrapper = ({ tocRef }) => {
       <Illustration />
       <About tocRef={tocRef} />
       <Resume tocRef={tocRef} />
-      <Projects />
+      <Projects tocRef={tocRef} />
     </div>
   );
 };

@@ -5,7 +5,7 @@ const Container = styled.div`
   background-color: white;
   margin: 20px;
   width: 90%;
-  flex-basis: 800px;
+  flex-basis: 500px;
 `;
 
 const Popup = styled.a`
@@ -16,16 +16,27 @@ const Popup = styled.a`
   }
 `;
 
+const Description = styled.p`
+  font-size: 0.9rem;
+  padding: 10px 25px 25px 25px;
+  text-align: left;
+  line-height: 24px;
+`;
+
+const Name = styled.b`
+  margin-right: 5px;
+`;
+
 const Project = ({ project }) => {
   return (
     <Container className="project-thumb">
       <Popup href="#" className="image-popup">
         <img src={project.img} alt="" />
       </Popup>
-      <p className="description">
-        <b>{project.name} </b>
+      <Description className="description">
+        <Name>{project.name}</Name>
         {project.description}
-      </p>
+      </Description>
     </Container>
   );
 };

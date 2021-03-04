@@ -9,7 +9,7 @@ const Education = () => {
 
   const skills = [
     'C', 'C++', 'Java', 'Python', 'SQL', 'Git', 'JavaFX',
-    'JavaScript', 'F#', 'Android Studio', 'Unity', 'C#'
+    'JavaScript', 'F#', 'Android Studio', 'Unity', 'C#', 'ASP.NET'
   ];
 
   return (

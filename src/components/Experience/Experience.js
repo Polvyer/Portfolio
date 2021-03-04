@@ -22,7 +22,10 @@ const Experience = () => {
           img={UIC} />
         <br />
         <br />
-        <Relevant>Joined a team of product and software engineers within IDEO to design, prototype, build and ship digital products. Worked as both a designer and developer on a variety of internal and client projects.</Relevant>
+        <Relevant> Wrote a Python script to organize Blackboard submissions which saved 3 hours per week in manual time. 
+        Designed, tested, and graded quiz problems for midterms and final exam.
+        Taught effective coding principles by introducing proper planning and debugging methods.
+        Held weekly office hours to help students with programming problem sets and technical concepts.</Relevant>
       </p>
       <br />
       <Skills skills={skills} />

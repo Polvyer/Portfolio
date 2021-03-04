@@ -8,10 +8,20 @@ const Container = styled.div`
   text-align: center;
   padding: 60px 0;
   font-size: 1.1rem;
-  letter-spacing: 0.3em;
-  font-weight: 700;
   line-height: 40px;
-  font-family: "Open Sans"
+  font-family: "Carla"
+`;
+
+const Anchor = styled.a`
+  display: block;
+  position: relative;
+  top: -150px;
+  visibility: hidden;
+`;
+
+const Inner = styled.div`
+  width: 100%;
+  margin: 0 auto;
 `;
 
 const Tagline = styled.p`
@@ -36,18 +46,26 @@ const listOfProjects = [
     github: "https://github.com/Polvyer/Spot-A-Song",
     name: "Spot-A-Song",
     description: "An intelligent algorithm that enables users to create awesome playlists based on a song.",
+  },
+  {
+    img: "https://i.imgur.com/GNSXlKa.png",
+    github: "https://github.com/Polvyer/Re-Art",
+    name: "Re:Art",
+    description: "A social media platform for visual artists who wish to improve their art.",
   }
 ]
 
-const Projects = () => {
+const Projects = ({ tocRef }) => {
+
   return (
     <Container>
-      <div>
+      <Anchor className="anchor" ref={el => tocRef.current[2] = el}> </Anchor>
+      <Inner className="inner">
         <Tagline id="projects">Projects</Tagline>
         <Section>
           {listOfProjects.map(project => <Project project={project} />)}
         </Section>
-      </div>
+      </Inner>
     </Container>
   );
 };
